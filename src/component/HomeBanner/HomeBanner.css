@@ -1,0 +1,58 @@
+.home-banner {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.banner-background {
+    width: 100%;
+    height: 50vh;
+    background: url('https://static.careerlink.vn/web/images/covers/mobile_app.jpeg') center/cover no-repeat;
+}
+
+.banner-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group i {
+    position: absolute;
+    left: 12px;
+    color: #888;
+    font-size: 16px;
+}
+
+.input-group input {
+    padding: 12px 12px 12px 36px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    min-width: 220px;
+}
+
+.banner-content button {
+    padding: 12px 24px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.banner-content button:hover {
+    background: #0056b3;
+}

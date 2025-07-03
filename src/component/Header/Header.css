@@ -1,0 +1,54 @@
+.header {
+    position: relative;
+    background: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 40px;
+}
+
+.header .nav {
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    flex: 1;
+    justify-content: center;
+    color: #555;
+}
+
+.header .nav a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header .actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header .actions .flag {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header .actions a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
