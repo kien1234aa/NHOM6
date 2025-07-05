@@ -58,8 +58,8 @@ const ProfileManagement = () => {
       {isMenuOpen && (
         <div className="mobile-menu">
           <div className="mobile-menu-content">
-            <button className="mobile-menu-item">Việc nhẹ lương cao của tôi</button>
             <button className="mobile-menu-item">Quản lí hồ sơ</button>
+            <button className="mobile-menu-item">Việc nhẹ lương cao của tôi</button>
             <button className="mobile-menu-item">Việc đã lưu</button>
             <button className="mobile-menu-item">Việc đã ứng tuyển</button>
             <button className="mobile-menu-item">Thông báo việc làm</button>
@@ -70,8 +70,8 @@ const ProfileManagement = () => {
 
       <nav className="nav-tabs">
         <div className="nav-tabs-container">
-          <button className="nav-tab active">Việc nhẹ lương cao của tôi</button>
-          <button className="nav-tab">Quản lí hồ sơ</button>
+          <button className="nav-tab active">Quản lí hồ sơ</button>
+          <button className="nav-tab">Việc nhẹ lương cao của tôi</button>
           <button className="nav-tab">Việc đã lưu</button>
           <button className="nav-tab">Việc đã ứng tuyển</button>
           <button className="nav-tab">Thông báo việc làm</button>
