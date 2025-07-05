@@ -27,7 +27,7 @@ function App() {
       ]
     },
     {
-      path: "/Search",
+      path: "/search",
       Component: Search,
     },
 
