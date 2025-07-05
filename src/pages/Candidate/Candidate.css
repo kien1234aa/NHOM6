@@ -1,0 +1,268 @@
+/* Candidate.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f5f7fa;
+}
+
+.candidate-container {
+  display: flex;
+  height: 100vh;
+}
+
+.candidate-sidebar {
+  width: 240px;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+}
+
+.candidate-sidebar .candidate-logo {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.candidate-sidebar .candidate-user {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.candidate-sidebar .candidate-user img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.candidate-sidebar .candidate-user .candidate-name {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.candidate-sidebar .candidate-user .candidate-email {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.candidate-sidebar nav h4 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.candidate-sidebar nav ul {
+  list-style: none;
+}
+
+.candidate-sidebar nav ul li {
+  margin: 8px 0;
+}
+
+.candidate-sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.candidate-sidebar nav ul li a .candidate-icon {
+  width: 18px;
+  height: 18px;
+  background: #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.candidate-sidebar nav ul li a.active {
+  font-weight: bold;
+}
+
+.candidate-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.candidate-topbar {
+  background: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.candidate-topbar .candidate-search {
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.candidate-topbar .candidate-search input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.candidate-topbar .candidate-search button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background: #eee;
+  cursor: pointer;
+}
+
+.candidate-topbar .candidate-user-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.candidate-breadcrumb {
+  padding: 20px;
+  font-size: 0.95em;
+}
+
+.candidate-breadcrumb .candidate-home-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #ccc;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+.candidate-filters {
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+
+.candidate-filters .candidate-field {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+}
+
+.candidate-filters .candidate-field label {
+  margin-bottom: 6px;
+}
+
+.candidate-filters .candidate-field input,
+.candidate-filters .candidate-field select {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 160px;
+}
+
+.candidate-filters .candidate-field input[type="text"] {
+  width: 200px;
+}
+
+.candidate-filters .candidate-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.candidate-filters .candidate-buttons button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.candidate-filters .candidate-buttons button i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #666;
+  margin-right: 6px;
+}
+
+.candidate-filters .candidate-apply {
+  background: #eee;
+  color: #333;
+}
+
+.candidate-filters .candidate-reset {
+  background: #eee;
+  color: #333;
+}
+
+.candidate-btn-add {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.candidate-table-wrap {
+  flex-grow: 1;
+  background: #fff;
+  margin: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.candidate-table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.candidate-table-wrap th,
+.candidate-table-wrap td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9em;
+}
+
+.candidate-table-wrap th {
+  background: #fafafa;
+}
+
+.candidate-pagination {
+  padding: 12px;
+  text-align: center;
+}
+
+.candidate-pagination button {
+  padding: 6px 12px;
+  margin: 0 4px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.candidate-empty-state {
+  padding: 40px;
+  text-align: center;
+  color: #777;
+  font-size: 0.95em;
+}
