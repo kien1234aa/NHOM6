@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Heart } from 'lucide-react';
-import Header_2 from '../../component/Header/Header_2.jsx';
+import Header from '../../component/Header/Header.jsx';
 
 
 // Job Card Component

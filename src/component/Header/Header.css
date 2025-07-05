@@ -1,54 +1,82 @@
 .header {
-    position: relative;
-    background: #fff;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-.header .logo {
-    display: flex;
-    align-items: center;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #7cbfe6, #1b89dd);
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #d32f2f;
+  z-index: 100;
 }
 
 .header .logo img {
-    height: 40px;
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  background: #fff;
+  padding: 4px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .header .nav {
-    display: flex;
-    gap: 16px;
-    font-size: 14px;
-    flex: 1;
-    justify-content: center;
-    color: #555;
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  flex: 1;
+  justify-content: center;
+  color: #555;
 }
 
 .header .nav a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    align-items: center;
-    gap: 4px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .header .actions {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .header .actions .flag {
-    font-size: 20px;
-    cursor: pointer;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .header .actions a {
-    text-decoration: none;
-    color: #333;
-    display: flex;
-    align-items: center;
-    gap: 4px;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dangKyTopBtn {
+  background-color: #f1d100;
+  border: none;
+  padding: 7px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s;
+}
+
+.dangKyTopBtn:hover {
+  background-color: #ffe066;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 16px;
 }
