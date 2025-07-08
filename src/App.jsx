@@ -1,19 +1,16 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 
-// Layouts
 import Layout from "./component/Layout/Layout";
 import NoHeaderLayout from "./component/Layout/NoHeaderLayout";
 
-// Pages
 import HomePage from "./pages/HomePage/HomePage";
 import Search from "./pages/Search/Search";
 import Candidate from "./pages/Candidate/Candidate";
 import JobDetail from "./pages/JobDetail/JobDetail";
-import Register from "./pages/Register/Register";
 
-import DangKyNguoiTimViec from "./pages/Login/DangKyNguoiTimViec";
-import DangKyNhaTuyenDung from "./pages/Login/DangKyNhaTuyenDung";
+import DangKyNguoiTimViec from "./pages/Register/DangKyNguoiTimViec";
+import DangKyNhaTuyenDung from "./pages/Register/DangKyNhaTuyenDung";
 import LoginNguoiTimViec from "./pages/Login/LoginNguoiTimViec";
 import LoginNhaTuyenDung from "./pages/Login/LoginNhaTuyenDung";
 
@@ -28,7 +25,6 @@ const router = createBrowserRouter([
       { path: "search", element: <Search /> },
       { path: "candidate", element: <Candidate /> },
       { path: "job-detail", element: <JobDetail /> },
-      { path: "register", element: <Register /> },
     ],
   },
   {
