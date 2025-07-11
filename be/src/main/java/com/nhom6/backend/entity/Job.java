@@ -1,3 +1,12 @@
+// src/main/java/com/nhom6/backend/entity/Job.java
+package com.nhom6.backend.entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import java.time.LocalDateTime;
+
 @Entity
 @Table(name = "jobs")
 @Data
@@ -27,4 +36,7 @@ public class Job {
     private LocalDateTime createdAt;
 
     private String status;
+
+    @Column(name = "is_hot")
+    private Boolean isHot = false; // Thêm trường isHot
 }

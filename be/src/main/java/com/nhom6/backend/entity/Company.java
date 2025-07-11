@@ -1,3 +1,11 @@
+// src/main/java/com/nhom6/backend/entity/Company.java
+package com.nhom6.backend.entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Entity
 @Table(name = "companies")
 @Data
@@ -18,4 +26,7 @@ public class Company {
     private String address;
     private String avatar;
     private String website;
+
+    @Column(name = "is_featured")
+    private Boolean isFeatured = false; // Thêm trường isFeatured
 }

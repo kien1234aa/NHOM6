@@ -1,6 +1,6 @@
 package com.nhom6.backend.controller;
 
-import com.nhom6.backend.model.User;
+import com.nhom6.backend.entity.User;
 import com.nhom6.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -25,7 +25,7 @@ public class UserController {
 
     // GET: /api/users/{id}
     @GetMapping("/{id}")
-    public Optional<User> getUserById(@PathVariable Integer id) {
+    public Optional<User> getUserById(@PathVariable Long id) {
         return userRepository.findById(id);
     }
 
@@ -44,7 +44,7 @@ public class UserController {
 
     // DELETE: /api/users/{id}
     @DeleteMapping("/{id}")
-    public void deleteUser(@PathVariable Integer id) {
+    public void deleteUser(@PathVariable Long id) {
         userRepository.deleteById(id);
     }
 }
